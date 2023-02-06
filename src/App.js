@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import './CSS/App.css'
+import GlobalStyles from './TextStyles'
+import {Route, Routes} from 'react-router';
+
+
+import HomePage from './components/HomePage';
+import AboutMePage from './components/AboutMePage';
+import ProjectsPage from './components/ProjectsPage';
+import SayHiPage from  './components/SayHiPage';
+import SkillsPage from  './components//SkillsPage';
+import ContactPage from './components/ContactPage';
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return <>
+
+    <Routes>
+      <Route exact path='/' index element={<HomePage />} />
+      <Route exact path='/AboutMe' element={<AboutMePage />} />
+      <Route exact path='/Projects' element={<ProjectsPage />} />
+      <Route exact path='/SayHi' element={<SayHiPage />} />
+      <Route exact path='/Skills' element={<SkillsPage />} />
+      <Route exact path='/Contact' element={<ContactPage />} />
+    </Routes>
+
+    <GlobalStyles />
+
+  </>
 }
 
 export default App;
