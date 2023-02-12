@@ -4,7 +4,7 @@ import '../CSS/Pages.css';
 import LogoutBut from '../subComponents/logoutBut';
 import Particle from '../subComponents/Particle';
 import { motion } from 'framer-motion';
-
+import BigTitle from '../subComponents/BigTitle';
 
 const container = {
   hidden: { opacity: 0 },
@@ -53,6 +53,7 @@ const ProjectsPage = () => {
     <div className='ProjectData--Box'  >
       <Particle />
       <LogoutBut />
+      <BigTitle text='Projects'  top='-5%' left='10%' pos='-500' cor='#f5ef9d'/>
       <motion.ul className='ProjectData' variants={container} initial="hidden" animate="show">
         {
           Projects.map( project => (

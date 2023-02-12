@@ -229,6 +229,7 @@ strong{
     align-items: center;
     cursor: pointer;
 
+    
     position: absolute;
     left: 48%;
 }
@@ -261,7 +262,9 @@ strong{
     height: 500px;
 
     border:solid 2px white;
-
+    backdrop-filter: blur(4px);
+    border-radius: 75px;
+    
     position: absolute;
     top: 25%;
     left: 10%;

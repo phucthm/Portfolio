@@ -6,11 +6,13 @@ import SocialIcon from '../subComponents/SocialIcon';
 import logo from '../asset/logo.png'
 import { NavLink } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import BigTitle from '../subComponents/BigTitle';
 
 const HomePage = () => {
   return (
     <div className='HomeContainer'>
       <LogoutBut />
+      <BigTitle text='Home Page'  top='65%' left='20%' pos='500' cor='#40f5be'/>
 
       <img src={line} alt='vine' className='contactLine'/>
 

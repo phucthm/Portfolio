@@ -4,12 +4,14 @@ import AmongUs from '../subComponents/amongusParticle'
 import { NavLink } from 'react-router-dom'
 import '../CSS/Pages.css'
 import sus from '../asset/amongus.png'
+import BigTitle from '../subComponents/BigTitle'
 
 const AboutMePage = () => {
   return (
     
     <div>
       <AmongUs />
+      <BigTitle text='About'  top='-5%' left='10%' pos='-500' cor='#e9eef5'/>
       <motion.div className='coverIconAboutMe'
               initial={{
                 y:-500,

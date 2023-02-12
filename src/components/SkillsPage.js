@@ -4,6 +4,7 @@ import LogoutBut from '../subComponents/logoutBut';
 import { motion } from 'framer-motion';
 import '../CSS/Pages.css';
 import  SkillsData  from '../subComponents/SkillsData' ;
+import BigTitle from '../subComponents/BigTitle';
 
 const Item = {
   hidden:{
@@ -69,6 +70,8 @@ const SkillsPage = () => {
   return (
     <div className='SkillPage'>
       <LogoutBut />
+      <BigTitle text='Skills'  top='75%' left='20%' pos='500' cor='#4094f5'/>
+
       <img src={logo} alt='logo' className='logo logo__small'/>
       <motion.div className='SkillsContent' variants={container} initial="hidden" animate="show"    >
         {SkillsData.map(Skills => ( 

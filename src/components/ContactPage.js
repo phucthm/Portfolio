@@ -6,11 +6,13 @@ import LogoutBut from '../subComponents/logoutBut';
 import { motion } from 'framer-motion';
 import '../CSS/Pages.css';
 import '../asset/fontawesome-free-6.2.1-web/css/all.min.css'
+import BigTitle from '../subComponents/BigTitle';
 
 const ContactPage = () => {
   return (
     <div>
       <LogoutBut />
+      <BigTitle text='Contact'  top='5%' left='10%' pos='-500' cor='#dff59d'/>
       <div className='decorContact--left'>
         <img src={parrot} alt='parot' className='parrot--right'/>
         <img src={vine} alt='vine' className='vine--right'/>
